@@ -9,19 +9,10 @@
 	"postCreateCommand": "./scripts/all/post_create_command.sh",
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
-			"installDevTools": true,
-			"installREnv": true,
-			"installRMarkdown": true,
-			"installRadian": true,
-			"installVscDebugger": true,
-			"version": "latest",
-			"pakVersion": "auto",
-			"vscodeRSupport": "full",
-			"pandocVersion": "latest"
-		},	
-		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
-			"installTinyTex": true,
-			"version": "latest"
+			"version": "release",
+			"pakVersion": "stable",
+			"vscodeRSupport": "none",
+			"pandocVersion": "none"
 		}
 	},
 	"customizations": {
@@ -29,9 +20,7 @@
 			"extensions": [
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
-				"REditorSupport.r",
-				"sourcegraph.cody-ai",
-				"bierner.markdown-preview-github-styles"
+				"REditorSupport.r"
 			]
 		}
 	}
