@@ -5,15 +5,7 @@
  * The "postCreateCommand" property specifies the commands to run after the container is created, which includes setting up R and cloning repositories.
  */
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:latest",
-	"postCreateCommand": "./scripts/all/post_create_command.sh",
-	"features": {
-		"ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
-			"installRadian": true,
-			"version": "release",
-			"pandocVersion": "auto"
-		}
-	},
+	"image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
 	"customizations": {
 		"vscode": {
 			"extensions": [
