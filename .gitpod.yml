@@ -1,0 +1,7 @@
+image: ghcr.io/rocker-org/devcontainer/r-ver:4
+
+vscode:
+  extensions:
+    - quarto.quarto
+    - REditorSupport.r
+    - bierner.markdown-preview-github-styles
